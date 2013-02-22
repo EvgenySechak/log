@@ -10,9 +10,11 @@ import math
 Исходный код программы
 import math
 
+import math
+
 INPUT = 'input.txt'
 
-def countLog(arr):
+    def countLog(arr):
     a1p = []
     a10 = []
     for number in arr:
@@ -29,12 +31,12 @@ def countLog(arr):
         	print ('%4f %4f' % (a1p[x], a10[x]))
 
 
-try:
-	with open(INPUT, 'r') as file_in:
-		data = file_in.readlines()
-		file_in.close()
-		countLog(data)
+    try:
+    	with open(INPUT, 'r') as file_in:
+    		data = file_in.readlines()
+    		file_in.close()
+    		countLog(data)
 
-except FileNotFoundError:
-    print('Oops! File not found!')
+       except FileNotFoundError:
+    		print('Oops! File not found!')
 
